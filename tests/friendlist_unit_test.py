@@ -9,18 +9,18 @@ def test_initialisation():
 Given a name and dob
 We can add a friend to our friends list
 """
-# friendlist = FriendList()
-# friendlist.add_friend('Bill', '1990-08-13')
-# friendlist.friends[0] # => {'name': 'Bill', 'dob': '1990-08-13'}
 def test_add_friend():
     fl = FriendList()
     fl.add_friend('Bill', '1990-08-13')
     dob_as_datetime = datetime.strptime('1990-08-13', "%Y-%m-%d")
     assert fl.friends[0] == {'name': 'Bill', 'dob': dob_as_datetime}
 
+# """
+# Given a name and incorrect dob
+# We raise an exception with the message 'dob must be in "YYYY-MM-DD format"'
+# """
 
-
-
+# CONTINUE FROM HERE
 
 
 # """

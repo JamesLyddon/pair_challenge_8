@@ -1,27 +1,9 @@
-from datetime import date, datetime
+from datetime import datetime
 
 class FriendList:
-    # User-facing properties:
-    #   friends: list of dictionaries
-
-    # def __init__(self, name):
-    #     # Parameters:
-    #     #   friends: list
-    #     # Side effects:
-    #     #   none
-    #     pass # No code here yet
     def __init__(self):
         self.friends = []
 
-    # def add_friend(self, name, dob):
-    #     # Parameters:
-    #     #   name: string representing friend's name
-    #     #   dob: string representing date of birth
-    #     # Side-effects
-    #     #   Adds freind to friends list
-    #     # Returns:
-    #     #   None
-    #     pass # No code here yet
     def add_friend(self, name, dob):
         try:
             dob_as_datetime = datetime.strptime(dob, "%Y-%m-%d")
